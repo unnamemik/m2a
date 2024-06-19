@@ -1,0 +1,78 @@
+.home-business .caption {
+    margin-top: -24px;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.home-business .features-list {
+    margin-top: 24px;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.home-business .feature {
+    width: calc((100% - 112px) / 3);
+    align-items: center;
+    gap: 24px;
+}
+
+.home-business .feature .image {
+    width: 64px;
+    height: 64px;
+}
+
+.home-business .feature-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+.home-business .section-links-container {
+    margin-top: 8px;
+    align-self: center;
+    gap: 32px;
+}
+
+@media screen and (max-width: 590px) {
+    .home-business .caption {
+        margin-top: -12px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .home-business .features-list {
+        margin-top: 0;
+        gap: 32px;
+    }
+
+    .home-business .feature {
+        width: calc((100% - 32px) / 2);
+        gap: 16px;
+    }
+
+    .home-business .feature .image {
+        width: 48px;
+        height: 48px;
+    }
+
+    .home-business .feature-title {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 19px;
+    }
+
+    .home-business .section-links-container {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .home-business .section-links-container .button:first-child {
+        width: 100%;
+    }
+
+    .home-business .section-links-container .button:last-child {
+        display: none;
+    }
+}

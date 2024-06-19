@@ -1,0 +1,90 @@
+/*Home page: Catalog Cards List*/
+
+.company-card .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.heading-container {
+    position: relative;
+    gap: 17px;
+    justify-content: flex-start;
+}
+
+.company-card .heading-container .wrapper {
+    gap: 7px;
+}
+
+.company-card .card-heading {
+    font-size: 22px;
+}
+
+.company-card .work-time,
+.company-card .contacts-container {
+    justify-content: flex-start;
+    color: var(--color-grey);
+    font-size: 14px;
+    font-weight: 300;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.company-card .contacts-container .wrapper {
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.company-card .contacts-container .icon {
+    width: 16px;
+    height: 16px;
+}
+
+.company-card .location-string {
+	max-width: 90%;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.company-card .contacts-container .company-card-copy {
+    width: 14px;
+    height: 14px;
+    margin-left: -4px;
+    color: var(--color-grey);
+    z-index: 10;
+}
+
+.company-card .contacts-container .company-card-copy:hover {
+    color: var(--color-black);
+}
+
+.company-card .contacts-container .company-card-phone {
+    background-image: url("/assets-v2/icons/card-company-phone.svg");
+}
+
+.company-card .contacts-container .company-card-location {
+    background-image: url("/assets-v2/icons/card-company-location.svg");
+}
+
+@media screen and (max-width: 590px) {
+    .company-card .logo {
+        position: absolute;
+        top: -32px;
+
+        width: 56px;
+        height: 56px;
+    }
+
+    .heading-container {
+        gap: 8px;
+    }
+
+    .company-card .card-heading {
+        margin-left: 64px;
+        font-size: 18px;
+    }
+
+    .company-card .work-time {
+        display: none;
+    }
+}

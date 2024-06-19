@@ -1,0 +1,133 @@
+.home-market .banner {
+    gap: 48px;
+    align-items: center;
+    padding: 40px 40px 64px;
+
+    background-color: var(--color-home-market-back);
+    border-radius: 20px;
+    box-shadow: var(--shadow-basic);
+
+    overflow: hidden;
+}
+
+.home-market .banner .logo-icon {
+    align-self: flex-start;
+    margin-bottom: -30px;
+
+    width: 102px;
+    height: 44px;
+}
+
+.home-market .banner .logo-text {
+    width: 500px;
+    height: 134px;
+    color: var(--color-white);
+}
+
+.home-market .banner .caption {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 24px;
+    line-height: 37px;
+}
+
+.home-market .caption {
+    margin-bottom: -16px;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.home-market .features-list {
+    gap: 32px;
+    align-items: flex-start;
+
+    /*overflow-x: scroll;*/
+    scrollbar-width: none;
+}
+
+.market-feature {
+    width: calc((100% - 96px) / 4);
+    min-width: 148px;
+}
+
+.market-feature {
+   gap: 24px;
+}
+
+.market-feature .image {
+    border-radius: 12px;
+    height: 184px;
+}
+
+.market-feature .feature-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.market-feature .caption {
+    margin-top: -8px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 590px) {
+    .home-market .banner {
+        gap: 40px;
+        padding: 44px 16px 32px;
+
+        background-color: var(--color-home-market-mobile-back);
+        border-radius: 12px;
+        box-shadow: none;
+    }
+
+    .home-market .banner .logo-icon {
+        align-self: center;
+        margin-bottom: 0;
+
+        width: 72px;
+        height: 38px;
+    }
+
+    .home-market .banner .logo-text {
+        width: 302px;
+        height: 81px;
+        color: var(--color-black);
+    }
+
+    .home-market .caption {
+        display: none;
+    }
+
+    .home-market .banner .button {
+        background-color: transparent;
+        color: var(--color-black);
+        box-shadow: none;
+    }
+
+    .home-market .banner .button:hover {
+        color: var(--color-white);
+    }
+
+    .home-market .features-list {
+        gap: 16px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .market-feature {
+        gap: 8px;
+        padding: 8px 8px 16px;
+        background-color: var(--color-white);
+        border-radius: 10px;
+    }
+
+    .market-feature .image {
+        height: 107px;
+        border-radius: 6px;
+    }
+
+    .market-feature .feature-title {
+        font-size: 12px;
+    }
+
+}

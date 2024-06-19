@@ -1,0 +1,121 @@
+/*Home page: App banner*/
+
+.app-banner-wrapper {
+    width: 100%;
+    background: linear-gradient(261deg, #FECE57 -13.08%, #FAAE42 33.61%, #FE921F 90.26%);
+    backdrop-filter: blur(5px);
+}
+
+.app-banner .text-container {
+    align-items: flex-start;
+    gap: 32px;
+    color: var(--color-white);
+}
+
+.app-banner .heading {
+    color: var(--color-white);
+    font-size: 44px;
+}
+
+.app-banner .caption {
+    font-size: 24px;
+}
+
+.app-banner .image-wrapper {
+    flex-shrink: 0;
+    padding-top: 40px;
+}
+
+.app-banner .qr-wrapper {
+    flex-shrink: 0;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.app-banner .qr-image {
+    width: 158px;
+    height: 158px;
+    background-color: var(--color-white);
+    border-radius: 16px;
+    border: 14px solid var(--color-white);
+}
+
+.app-banner .store-links-container {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .app-banner {
+        padding: 105px 0;
+    }
+    .app-banner .image-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .app-banner {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .app-banner-wrapper {
+        background: transparent;
+    }
+
+    .app-banner {
+        gap: 32px;
+        padding: 32px 24px 0;
+        background-image: url("/assets-v2/img/home-app-banner-mobile-back.png");
+        background-size: cover;
+        border-radius: 12px;
+        background-color: var(--color-lightblue);
+        backdrop-filter: blur(5px);
+    }
+
+    .app-banner .heading {
+        font-size: 22px;
+    }
+
+    .app-banner .caption {
+        display: none;
+    }
+
+    .app-banner .image-wrapper {
+        display: flex;
+        padding: 0;
+
+        width: 100%;
+    }
+
+    .app-banner .store-links-container {
+        display: flex;
+        gap: 24px;
+    }
+
+    .app-banner .phone-image {
+        width: 156px;
+        height: 220px;
+    }
+
+    .app-banner .qr-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .app-banner {
+        padding: 32px 24px;
+        text-align: center;
+    }
+
+    .app-banner .phone-image {
+        display: none;
+    }
+
+    .app-banner .store-links-container {
+        margin: 0 auto;
+    }
+}

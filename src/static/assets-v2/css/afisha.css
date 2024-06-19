@@ -1,0 +1,211 @@
+/*Home page: Afisha*/
+
+.home-afisha {
+    gap: 32px;
+}
+
+.home-afisha .button.orange:last-child {
+    align-self: center;
+}
+
+/*Banner */
+
+.home-afisha .banner {
+    padding: 6px 40px 6px 16px;
+
+    background-color: var(--color-lightblue);
+    background-image: url("/assets-v2/img/afisha-banner-back.png");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.home-afisha .banner .image {
+    width: 140px;
+    height: 80px;
+}
+
+.home-afisha .banner .wrapper {
+    gap: 16px;
+}
+
+.home-afisha .banner .text-container {
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home-afisha .banner .text-container .link {
+    padding: 8px 10px;
+    white-space: nowrap;
+    background-color: var(--color-blue);
+    border-radius: 26px;
+}
+
+/*Events*/
+
+.home-afisha .events {
+    gap: 56px;
+}
+
+.home-afisha .events .heading-container {
+    justify-content: space-between;
+}
+
+.home-afisha .events .heading {
+    color: var(--color-black);
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.home-afisha .events-list-wrapper {
+    margin-top: -16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.home-card.event-card {
+    background-color: transparent;
+    box-shadow: none;
+
+    min-width: 220px;
+}
+
+.home-card.event-card .image-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+
+    height: 194px;
+}
+
+.home-card.event-card .card-cover {
+    width: 100%;
+    height: 100%;
+}
+
+.home-card.event-card:hover {
+    box-shadow: none;
+}
+
+.event-card .text-wrapper {
+    gap: 16px;
+    overflow: hidden;
+}
+
+.event-card .card-heading {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.event-card .description {
+    font-size: 18px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 1385px) {
+    .home-afisha .banner {
+        padding-bottom: 16px;
+    }
+
+    .home-afisha .banner .text-container {
+       line-height: 150%;
+    }
+
+    .home-afisha .banner .text-container .link {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-afisha .banner .button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .home-afisha {
+        gap: 24px;
+    }
+
+    .home-afisha .button.orange:last-child {
+        display: none;
+    }
+
+    /*Banner */
+
+    .home-afisha .banner {
+        margin: 0 -16px;
+        padding: 16px;
+        border-radius: 0;
+    }
+
+    .home-afisha .banner .image {
+        width: 90px;
+        height: 54px;
+    }
+
+    .home-afisha .banner .wrapper {
+        flex-direction: row-reverse;
+        gap: 0;
+    }
+
+    .home-afisha .banner .text-container {
+        font-size: 17px;
+        text-transform: capitalize;
+    }
+
+    .home-afisha .banner .text-container .link {
+        padding: 2px 4px;
+        border-radius: 7px;
+        margin-left: -4px;
+    }
+
+    /*Events*/
+
+    .home-afisha .events {
+        gap: 24px;
+    }
+
+    .home-afisha .events .heading-container {
+        display: none;
+    }
+
+    .home-afisha .cards-list.events-list-wrapper {
+        margin-top: 0;
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .home-card.event-card .image-wrapper {
+        height: 128px;
+    }
+
+    .event-card .text-container {
+        gap: 4px;
+    }
+
+    .event-card .card-heading {
+        font-size: 12px;
+    }
+
+    .event-card .description {
+        font-size: 11px;
+    }
+}

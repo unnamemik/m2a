@@ -1,0 +1,25 @@
+/*Home page: Container*/
+
+.home-main {
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.home-catalog {
+    margin-top: -20px;
+}
+
+.home-career {
+    margin-top: -16px;
+}
+
+@media screen and (max-width: 590px) {
+    .home-main {
+        gap: 48px;
+    }
+
+    .home-catalog,
+    .home-career {
+        margin-top: 0;
+    }
+}
